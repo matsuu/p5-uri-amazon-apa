@@ -14,7 +14,7 @@ WriteMakefile(
     PREREQ_PM => {
         'Test::More'  => 0,
         'URI'         => 0,
-        'URI::Escape' => 0,
+        'URI::Escape' => 3.26,
         'Digest::SHA' => 0,
       },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },

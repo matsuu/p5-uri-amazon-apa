@@ -5,7 +5,7 @@ our $VERSION = sprintf "%d.%02d", q$Revision: 0.2 $ =~ /(\d+)/g;
 use Carp;
 use POSIX qw(strftime);
 use Digest::SHA qw(hmac_sha256_base64);
-use URI::Escape;
+use URI::Escape qw(uri_escape_utf8 uri_unescape);
 use Encode qw/decode_utf8/;
 use base 'URI::http';
 
