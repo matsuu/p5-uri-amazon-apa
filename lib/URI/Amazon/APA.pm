@@ -24,7 +24,7 @@ sub sign {
     $q{AWSAccessKeyId} = $arg{key};
     $q{Timestamp} ||=
       strftime( "%Y-%m-%dT%TZ", gmtime() );    # 2009-01-01T12:00:00Z
-    $q{Version} ||= '2009-01-01';
+    $q{Version} ||= '2009-03-31';
     my $sq = join '&',
       map { $_ . '=' . uri_escape_utf8( $q{$_} ) } sort keys %q;
     my $tosign = join "\n", 'GET', $self->host, $self->path, $sq;
