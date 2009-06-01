@@ -8,7 +8,6 @@ SYNOPSIS
       # self-explanatory
       use strict;
       use warnings;
-      use URI::Amazon::APA;
       use LWP::UserAgent;
       use XML::Simple;
       use YAML::Syck;

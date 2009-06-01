@@ -58,7 +58,6 @@ $Id: APA.pm,v 0.2 2009/05/22 19:31:05 dankogai Exp dankogai $
   # self-explanatory
   use strict;
   use warnings;
-  use URI::Amazon::APA;
   use LWP::UserAgent;
   use XML::Simple;
   use YAML::Syck;
